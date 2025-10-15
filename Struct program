@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<string.h>
+struct music
+{
+    char a[50];
+    char s[50];
+    float d;
+}m1,m2,m3;
+int main()
+{
+    strcpy(m1.a,"Vimmaithaandi Varuvaayaa");
+    strcpy(m1.s,"A.R.Rahman");
+    m1.d=4.20;
+    strcpy(m2.a,"Thulluvadho Ilamai");
+    strcpy(m2.s,"Yuvan Shankar Raja");
+    m2.d=3.21;
+    strcpy(m3.a,"Minnale");
+    strcpy(m3.s,"Harris Yayaraj");
+    m3.d=3.55;
+    printf("Album : %s\n",m1.a);
+    printf("Singer : %s\n",m1.s);
+    printf("Duration : %f\n",m1.d);
+    printf("----------------------\n");
+    printf("Album : %s\n",m2.a);
+    printf("Singer : %s\n",m2.s);
+    printf("Duration : %f\n",m2.d);
+    printf("----------------------\n");
+    printf("Album : %s\n",m3.a);
+    printf("Singer : %s\n",m3.s);
+    printf("Duration : %f\n",m3.d);
+    printf("----------------------");
+    return 0;
+}
